@@ -14,8 +14,6 @@ def method_of_false_position(x_l, x_u, f, err):
     x_r = x_r_estimate(x_l, x_u)
     
     while abs(f(x_r)) > err:
-        print(x_r)
-        # sleep(1)
         if f(x_l) * f(x_r) < 0:
             x_u = x_r
         elif f(x_l) * f(x_r) > 0:
