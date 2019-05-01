@@ -1,5 +1,3 @@
-from time import sleep
-
 def func (x):
     return x**2 - 9
 
