@@ -1,0 +1,2 @@
+class IVPStrategy(object):
+    pass
