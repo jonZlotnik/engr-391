@@ -14,10 +14,7 @@ class VandermondeInterpolator:
 
     @property
     def vandermonde_matrix(self) -> np.ndarray:
-        vm = np.empty((len(self._x), len(self._x)), np.float64)
-        for i in range(len(self._x)):
-            vm[i] = np.power(self._x, i)
-        return vm
+        return np.vander(self._x)
 
     @property
     def model_params(self) -> np.ndarray:
